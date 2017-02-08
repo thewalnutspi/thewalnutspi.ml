@@ -1,0 +1,6 @@
+RewriteEngine On
+RewriteBase /
+
+RewriteCond %{HTTP_HOST} !^thewalnutspi\.ml$
+RewriteCond %{HTTP_HOST} !^thewalnutspi\.server\.samuelthomas\.ml$
+RewriteRule .* %{REQUEST_SCHEME}://thewalnutspi.ml/$1 [L,R=303]

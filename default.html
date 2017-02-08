@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html id="html">
+<head>
+	<title>The Walnuts Pi</title>
+	
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+	
+	<!-- Bootstrap -->
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" />
+	
+	<link rel="stylesheet" type="text/css" href="/css/1.css" />
+	
+	<script>document.documentElement.className += " js";</script>
+</head>
+<body data-spy="scroll" data-target="#navbar" data-offset="120">
+	<div class="background"></div>
+	
+	<div class="page">
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="/">The Walnuts Pi</a>
+				</div>
+				<div id="navbar" class="navbar-collapse collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li class="active js"><a href="#html" onclick="window.location.href = '.'; event.preventDefault(); return false;">thewalnutspi.ml</a></li>
+						<li class="active no-js"><a href=".">thewalnutspi.ml</a></li>
+						<li><a href="https://samuelthomas2774.github.io">samuelthomas2774.github.io</a></li>
+						<li><a href="https://harryuk.github.io">harryuk.github.io</a></li>
+						<li><a href="#contact">Contact</a></li>
+						<li><a href="https://github.com/thewalnutspi">GitHub</a></li>
+						<li class="no-js"><a href="#pi-1">Pi 1 <i>*</i></a></li>
+						<li class="no-js"><a href="#pi-2">Pi 2 <i>*</i></a></li>
+						<li class="no-js"><a href="#pi-3">Pi 3 <i>*</i></a></li>
+						<li class="dropdown js" id="navbar-dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pis <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li class="dropdown-header">HTTP</li>
+								<li><a href="http://pi-1.thewalnutspi.ml">Pi 1 <i>*</i></a></li>
+								<li><a href="http://pi-2.thewalnutspi.ml">Pi 2 <i>*</i></a></li>
+								<li><a href="http://pi-3.thewalnutspi.ml">Pi 3 <i>*</i></a></li>
+								<li class="divider" role="separator"></li>
+								<li class="dropdown-header">HTTPS</li>
+								<li><a href="https://pi-1.thewalnutspi.ml">Pi 1 <i>*</i></a></li>
+								<li><a href="https://pi-2.thewalnutspi.ml">Pi 2 <i>*</i></a></li>
+								<li><a href="https://pi-3.thewalnutspi.ml">Pi 3 <i>*</i></a></li>
+								<li class="divider" role="separator"></li>
+								<li class="dropdown-header">Support E-mail</li>
+								<li><a href="mailto:pi-1@thewalnutspi.ml">Pi 1 <i>*</i></a></li>
+								<li><a href="mailto:pi-2@thewalnutspi.ml">Pi 2 <i>*</i></a></li>
+								<li><a href="mailto:pi-3@thewalnutspi.ml">Pi 3 <i>*</i></a></li>
+								<li class="divider" role="separator"></li>
+								<li class="dropdown-header">Server Message Block</li>
+								<li><a href="smb://pi@pi-1.thewalnutspi.ml">Pi 1 <i>*</i></a></li>
+								<li><a href="smb://pi@pi-2.thewalnutspi.ml">Pi 2 <i>*</i></a></li>
+								<li><a href="smb://pi@pi-3.thewalnutspi.ml">Pi 3 <i>*</i></a></li>
+								<li class="divider" role="separator"></li>
+								<li class="dropdown-header">phpMyAdmin</li>
+								<li><a href="https://phpmyadmin-1.thewalnutspi.ml">Pi 1 <i>*</i></a></li>
+								<li><a href="https://phpmyadmin-2.thewalnutspi.ml">Pi 2 <i>*</i></a></li>
+								<li><a href="https://phpmyadmin-3.thewalnutspi.ml">Pi 3 <i>*</i></a></li>
+							</ul>
+						</li>
+						<li class="dropdown js" id="navbar-dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Menu <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="#pi-1">Pi 1</a></li>
+								<li><a href="#pi-2">Pi 2</a></li>
+								<li><a href="#pi-3">Pi 3</a></li>
+								<li class="divider" role="separator"></li>
+								<li class="dropdown-header">Projects</li>
+								<li><a href="#foodheaven">Food Heaven</a></li>
+								<li><a href="#pecs-online">PECS Online</a></li>
+								<li><a href="#project-w">Project W</a></li>
+								<li><a href="#remote-ddns">Remote Dynamic DNS</a></li>
+								<li><a href="#the-walnuts-portal">The Walnuts Portal</a></li>
+								<li class="divider" role="separator"></li>
+								<li class="dropdown-header">People</li>
+								<li><a href="#samuel-elliott">Samuel Elliott</a></li>
+								<li><a href="#harry-carrigan">Harry Carrigan</a></li>
+								<li class="divider" role="separator"></li>
+								<li><a href="javascript:$.fadein.reset();">Reset scrolling animation</a></li>
+								<li><a href="javascript:$('html,body').scrollTop(0);">Scroll to the top</a></li>
+								<li><a href="javascript:$('html,body').scrollTop(0);$.fadein.reset();">Scroll to the top and reset scrolling animation</a></li>
+								<li><a href="javascript:history.pushState(null,null,window.location.pathname+window.location.search);">Delete url hash</a></li>
+							</ul>
+						</li>
+						<li style="display: none;"><a href="#did-you-know"></a></li>
+					</ul>
+				</div><!--/.navbar-collapse -->
+			</div>
+		</nav>
+		
+		<div class="jumbotron">
+			<div class="container">
+				<h1>The Walnuts Pi</h1>
+				<p><img class="centre-block" src="/images/pi-vs-mac.png" style="max-width: 100%;" /></p>
+				<div class="fade-in-on-scroll text-center">
+					<p class="text-uppercase text-danger" style="margin-top: -70px; margin-bottom: 50px;"><b>Don't buy one</b></p>
+					<p>It doesn't come with insurance.</p>
+					<p><a href="https://apple.com/uk/mac-mini/">Find an alternative</a></p>
+				</div>
+			</div>
+		</div>
+		
+		<noscript>
+			<div class="container">
+				<p class="alert alert-warning"><span class="glyphicon glyphicon-alert"></span> <strong>You have JavaScript disabled.</strong> Don't you want to see the fancy scrolling animation?</p>
+			</div>
+		</noscript>
+		
+		<div class="fade-out-on-scroll" style="display: none;">
+			<div class="container no-background text-center">
+				<h3><span class="glyphicon glyphicon-arrow-down"></span></h3>
+				<p>Scroll down to see more</p>
+			</div>
+		</div>
+		
+		<div class="section-header fade-in-on-scroll">
+			<div class="container no-background">
+				<h2>Pis</h2>
+				<p>These links only work inside The Walnuts School.</p>
+			</div>
+		</div>
+		
+		<div class="section fade-in-on-scroll blur-background">
+			<div class="container" id="pi-1">
+				<h2><div class="btn-group pull-right">
+					<a class="btn btn-primary" href="http://pi-1.thewalnutspi.ml"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg> Website <i>*</i></a>
+					<a class="btn btn-default" href="mailto:pi-1@thewalnutspi.ml"><svg class="octicon octicon-mail" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M0 4v8c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V4c0-.55-.45-1-1-1H1c-.55 0-1 .45-1 1zm13 0L7 9 1 4h12zM1 5.5l4 3-4 3v-6zM2 12l3.5-3L7 10.5 8.5 9l3.5 3H2zm11-.5l-4-3 4-3v6z"></path></svg> Support</a>
+					<a class="btn btn-default" href="smb://pi@pi-1.thewalnutspi.ml"><svg class="octicon octicon-file-directory" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M13 4H7V3c0-.66-.31-1-1-1H1c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V5c0-.55-.45-1-1-1zM6 4H1V3h5v1z"></path></svg> SMB <i>*</i></a>
+					<a class="btn btn-default" href="https://phpmyadmin-1.thewalnutspi.ml"><svg class="octicon octicon-database" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M6 15c-3.31 0-6-.9-6-2v-2c0-.17.09-.34.21-.5.67.86 3 1.5 5.79 1.5s5.12-.64 5.79-1.5c.13.16.21.33.21.5v2c0 1.1-2.69 2-6 2zm0-4c-3.31 0-6-.9-6-2V7c0-.11.04-.21.09-.31.03-.06.07-.13.12-.19C.88 7.36 3.21 8 6 8s5.12-.64 5.79-1.5c.05.06.09.13.12.19.05.1.09.21.09.31v2c0 1.1-2.69 2-6 2zm0-4c-3.31 0-6-.9-6-2V3c0-1.1 2.69-2 6-2s6 .9 6 2v2c0 1.1-2.69 2-6 2zm0-5c-2.21 0-4 .45-4 1s1.79 1 4 1 4-.45 4-1-1.79-1-4-1z"></path></svg> phpMyAdmin <i>*</i></a>
+				</div>Pi 1 <small style="vertical-align: 4px;"><span class="label label-default text-uppercase">WINS pi-1</span> <span class="label label-default text-uppercase">Bonjour <span class="text-lowercase">pi-1.local</span></span></small></h2>
+			</div>
+		</div>
+		
+		<div class="section fade-in-on-scroll blur-background">
+			<div class="container" id="pi-2">
+				<h2><div class="btn-group pull-right">
+					<a class="btn btn-primary" href="http://pi-2.thewalnutspi.ml"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg> Website <i>*</i></a>
+					<a class="btn btn-default" href="mailto:pi-2@thewalnutspi.ml"><svg class="octicon octicon-mail" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M0 4v8c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V4c0-.55-.45-1-1-1H1c-.55 0-1 .45-1 1zm13 0L7 9 1 4h12zM1 5.5l4 3-4 3v-6zM2 12l3.5-3L7 10.5 8.5 9l3.5 3H2zm11-.5l-4-3 4-3v6z"></path></svg> Support</a>
+					<a class="btn btn-default" href="smb://pi@pi-2.thewalnutspi.ml"><svg class="octicon octicon-file-directory" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M13 4H7V3c0-.66-.31-1-1-1H1c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V5c0-.55-.45-1-1-1zM6 4H1V3h5v1z"></path></svg> SMB <i>*</i></a>
+					<a class="btn btn-default" href="https://phpmyadmin-2.thewalnutspi.ml"><svg class="octicon octicon-database" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M6 15c-3.31 0-6-.9-6-2v-2c0-.17.09-.34.21-.5.67.86 3 1.5 5.79 1.5s5.12-.64 5.79-1.5c.13.16.21.33.21.5v2c0 1.1-2.69 2-6 2zm0-4c-3.31 0-6-.9-6-2V7c0-.11.04-.21.09-.31.03-.06.07-.13.12-.19C.88 7.36 3.21 8 6 8s5.12-.64 5.79-1.5c.05.06.09.13.12.19.05.1.09.21.09.31v2c0 1.1-2.69 2-6 2zm0-4c-3.31 0-6-.9-6-2V3c0-1.1 2.69-2 6-2s6 .9 6 2v2c0 1.1-2.69 2-6 2zm0-5c-2.21 0-4 .45-4 1s1.79 1 4 1 4-.45 4-1-1.79-1-4-1z"></path></svg> phpMyAdmin <i>*</i></a>
+				</div>Pi 2 <small style="vertical-align: 4px;"><span class="label label-default text-uppercase">WINS harry</span> <span class="label label-default text-uppercase">Bonjour <span class="text-lowercase">harry.local</span></span></small></h2>
+			</div>
+		</div>
+		
+		<div class="section fade-in-on-scroll blur-background">
+			<div class="container" id="pi-3">
+				<h2><div class="btn-group pull-right">
+					<a class="btn btn-primary" href="http://pi-3.thewalnutspi.ml"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg> Website <i>*</i></a>
+					<a class="btn btn-default" href="mailto:pi-3@thewalnutspi.ml"><svg class="octicon octicon-mail" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M0 4v8c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V4c0-.55-.45-1-1-1H1c-.55 0-1 .45-1 1zm13 0L7 9 1 4h12zM1 5.5l4 3-4 3v-6zM2 12l3.5-3L7 10.5 8.5 9l3.5 3H2zm11-.5l-4-3 4-3v6z"></path></svg> Support</a>
+					<a class="btn btn-default" href="smb://pi@pi-3.thewalnutspi.ml"><svg class="octicon octicon-file-directory" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M13 4H7V3c0-.66-.31-1-1-1H1c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V5c0-.55-.45-1-1-1zM6 4H1V3h5v1z"></path></svg> SMB <i>*</i></a>
+					<a class="btn btn-default" href="https://phpmyadmin-3.thewalnutspi.ml"><svg class="octicon octicon-database" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M6 15c-3.31 0-6-.9-6-2v-2c0-.17.09-.34.21-.5.67.86 3 1.5 5.79 1.5s5.12-.64 5.79-1.5c.13.16.21.33.21.5v2c0 1.1-2.69 2-6 2zm0-4c-3.31 0-6-.9-6-2V7c0-.11.04-.21.09-.31.03-.06.07-.13.12-.19C.88 7.36 3.21 8 6 8s5.12-.64 5.79-1.5c.05.06.09.13.12.19.05.1.09.21.09.31v2c0 1.1-2.69 2-6 2zm0-4c-3.31 0-6-.9-6-2V3c0-1.1 2.69-2 6-2s6 .9 6 2v2c0 1.1-2.69 2-6 2zm0-5c-2.21 0-4 .45-4 1s1.79 1 4 1 4-.45 4-1-1.79-1-4-1z"></path></svg> phpMyAdmin <i>*</i></a>
+				</div>Pi 3 <small style="vertical-align: 4px;"><span class="label label-default text-uppercase">WINS pi-3</span> <span class="label label-default text-uppercase">Bonjour <span class="text-lowercase">pi-3.local</span></span></small></h2>
+				<p>Currently being used to host <a href="#foodheaven">Food Heaven [website]</a>.</p>
+			</div>
+		</div>
+		
+		<div class="section-header fade-in-on-scroll">
+			<div class="container no-background">
+				<h2>Projects</h2>
+				<p>Some of these links only work in The Walnuts School.</p>
+			</div>
+		</div>
+		
+		<div class="section fade-in-on-scroll blur-background">
+			<div class="container" id="foodheaven">
+				<h2><div class="btn-group pull-right">
+					<button class="btn btn-default" disabled="disabled"><svg class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg> GitHub</button>
+					<a class="btn btn-primary" href="http://foodheaven.thewalnutspi.ml"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg> Website <i>*</i></a>
+					<button class="btn btn-default" disabled="disabled"><svg class="octicon octicon-repo-forked" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 0 0-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 0 0 2 1a1.993 1.993 0 0 0-1 3.72V6.5l3 3v1.78A1.993 1.993 0 0 0 5 15a1.993 1.993 0 0 0 1-3.72V9.5l3-3V4.72A1.993 1.993 0 0 0 8 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"></path></svg> Fork</button>
+					<button class="btn btn-default" disabled="disabled"><svg class="octicon octicon-arrow-down" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7 7V3H3v4H0l5 6 5-6z"></path></svg> Download</button>
+				</div>Food Heaven [website] <small style="vertical-align: 4px;"><a class="label label-default text-uppercase" href="#pi-3">pi-3</a> <span class="label label-warning text-uppercase">In development</span></small></h2>
+				<p>The website for our class [Upper 6] enterprise project, Food Heaven.</p>
+			</div>
+		</div>
+		
+		<div class="section fade-in-on-scroll blur-background">
+			<div class="container" id="pecs-online">
+				<h2><div class="btn-group pull-right">
+					<button class="btn btn-default" disabled="disabled"><svg class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg> GitHub</button>
+					<a class="btn btn-primary" href="http://pecsonline.thewalnutspi.ml"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg> Website <i>*</i></a>
+					<button class="btn btn-default" disabled="disabled"><svg class="octicon octicon-repo-forked" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 0 0-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 0 0 2 1a1.993 1.993 0 0 0-1 3.72V6.5l3 3v1.78A1.993 1.993 0 0 0 5 15a1.993 1.993 0 0 0 1-3.72V9.5l3-3V4.72A1.993 1.993 0 0 0 8 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"></path></svg> Fork</button>
+					<button class="btn btn-default" disabled="disabled"><svg class="octicon octicon-arrow-down" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7 7V3H3v4H0l5 6 5-6z"></path></svg> Download</button>
+				</div>PECS Online <small style="vertical-align: 4px;"><a class="label label-default text-uppercase" href="#pi-1">pi-1</a> <span class="label label-warning text-uppercase">In development</span></small></h2>
+			</div>
+		</div>
+		
+		<div class="section fade-in-on-scroll blur-background">
+			<div class="container" id="project-w">
+				<h2><div class="btn-group pull-right">
+					<button class="btn btn-primary" disabled="disabled"><svg class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg> GitHub</button>
+					<button class="btn btn-default" disabled="disabled"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg> Website</button>
+					<button class="btn btn-default" disabled="disabled"><svg class="octicon octicon-repo-forked" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 0 0-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 0 0 2 1a1.993 1.993 0 0 0-1 3.72V6.5l3 3v1.78A1.993 1.993 0 0 0 5 15a1.993 1.993 0 0 0 1-3.72V9.5l3-3V4.72A1.993 1.993 0 0 0 8 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"></path></svg> Fork</button>
+					<button class="btn btn-default" disabled="disabled"><svg class="octicon octicon-arrow-down" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7 7V3H3v4H0l5 6 5-6z"></path></svg> Download</button>
+				</div>Project W <small style="vertical-align: 4px;"><span class="label label-default text-uppercase">Samuel Elliott</span> <a class="label label-default text-uppercase" href="#pi-1">pi-1</a> <span class="label label-warning text-uppercase">In development</span></small></h2>
+				<p>An in-development project - currently private.</p>
+			</div>
+		</div>
+		
+		<div class="section fade-in-on-scroll blur-background">
+			<div class="container" id="project-w">
+				<h2><div class="btn-group pull-right">
+					<button class="btn btn-primary" disabled="disabled"><svg class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg> GitHub</button>
+					<button class="btn btn-default" disabled="disabled"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg> Website</button>
+					<button class="btn btn-default" disabled="disabled"><svg class="octicon octicon-repo-forked" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 0 0-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 0 0 2 1a1.993 1.993 0 0 0-1 3.72V6.5l3 3v1.78A1.993 1.993 0 0 0 5 15a1.993 1.993 0 0 0 1-3.72V9.5l3-3V4.72A1.993 1.993 0 0 0 8 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"></path></svg> Fork</button>
+					<button class="btn btn-default" disabled="disabled"><svg class="octicon octicon-arrow-down" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7 7V3H3v4H0l5 6 5-6z"></path></svg> Download</button>
+				</div>Remote Dynamic DNS <small style="vertical-align: 4px;"><span class="label label-default text-uppercase">Samuel Elliott</span> <a class="label label-default text-uppercase" href="#pi-1">pi-1</a> <span class="label label-info text-uppercase">Future project</span></small></h2>
+				<p>A project I'm considering for the future.</p>
+			</div>
+		</div>
+		
+		<div class="section fade-in-on-scroll blur-background">
+			<div class="container" id="the-walnuts-portal">
+				<h2><div class="btn-group pull-right">
+					<a class="btn btn-primary" href="https://github.com/thewalnutspi/the-walnuts-portal"><svg class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg> GitHub</a>
+					<a class="btn btn-default" href="http://portal.thewalnutspi.ml"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg> Website <i>*</i></a>
+					<a class="btn btn-default" href="https://github.com/thewalnutspi/the-walnuts-portal/fork"><svg class="octicon octicon-repo-forked" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 0 0-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 0 0 2 1a1.993 1.993 0 0 0-1 3.72V6.5l3 3v1.78A1.993 1.993 0 0 0 5 15a1.993 1.993 0 0 0 1-3.72V9.5l3-3V4.72A1.993 1.993 0 0 0 8 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"></path></svg> Fork</a>
+					<a class="btn btn-default" href="https://github.com/thewalnutspi/the-walnuts-portal/archive/master.zip"><svg class="octicon octicon-arrow-down" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7 7V3H3v4H0l5 6 5-6z"></path></svg> Download</a>
+				</div>The Walnuts Portal <small style="vertical-align: 4px;"><span class="label label-default text-uppercase">Harry Carrigan</span> <a class="label label-default text-uppercase" href="#pi-2">pi-2</a> <span class="label label-danger text-uppercase">Discontinued</span>
+					<span class="label label-default js">
+						<svg class="octicon octicon-star" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74z"></path></svg>
+						<span class="github-stars" data-repository="thewalnutspi/the-walnuts-portal" data-updatingcontent='<svg class="octicon octicon-ellipsis" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path d="M11 5H1c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1h10c.55 0 1-.45 1-1V6c0-.55-.45-1-1-1zM4 9H2V7h2v2zm3 0H5V7h2v2zm3 0H8V7h2v2z"></path></svg>'>
+							<svg class="octicon octicon-ellipsis" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path d="M11 5H1c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1h10c.55 0 1-.45 1-1V6c0-.55-.45-1-1-1zM4 9H2V7h2v2zm3 0H5V7h2v2zm3 0H8V7h2v2z"></path></svg>
+						</span>
+					</span>
+				</small></h2>
+				<p>The Walnuts Portal is going to be a secret project coming soon to people of "The Walnuts School"</p>
+				<p>The Walnuts Portal is going to be a portal for websites code at the walnuts school.</p>
+			</div>
+		</div>
+		
+		<div class="section jumbotron fade-in-on-scroll">
+			<div class="container" id="did-you-know">
+				<h2>Did you know?</h2>
+				<p><img class="centre-block" src="/images/did-you-know.png" style="max-width: 100%;" /></p>
+				<div class="fade-in-on-scroll text-center">
+					<p class="text-uppercase text-success" style="margin-top: -70px; margin-bottom: 50px;"><b>It's true.</b></p>
+				</div>
+			</div>
+		</div>
+		
+		<div class="section-header fade-in-on-scroll">
+			<div class="container no-background">
+				<h2>People</h2>
+				<p>These people's projects are featured on this page.</p>
+			</div>
+		</div>
+		
+		<div class="section fade-in-on-scroll blur-background">
+			<div class="container" id="samuel-elliott">
+				<div class="pull-left" style="margin: 20px 20px 20px 0px;">
+					<img src="/images/samuel-elliott.jpg" style="width: 100px; height: 100px;" />
+				</div>
+				<h2><div class="btn-group pull-right">
+					<a class="btn btn-primary" href="https://github.com/samuelthomas2774"><svg class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg> GitHub</a>
+					<a class="btn btn-default" href="https://samuelthomas2774.github.io"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg> Website</a>
+					<a class="btn btn-default" href="mailto:samuel@thewalnutspi.ml"><svg class="octicon octicon-mail" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M0 4v8c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V4c0-.55-.45-1-1-1H1c-.55 0-1 .45-1 1zm13 0L7 9 1 4h12zM1 5.5l4 3-4 3v-6zM2 12l3.5-3L7 10.5 8.5 9l3.5 3H2zm11-.5l-4-3 4-3v6z"></path></svg> Email</a>
+				</div>Samuel Elliott <small style="vertical-align: 4px;"><span class="label label-primary">samuelthomas2774</span></small></h2>
+			</div>
+		</div>
+		
+		<div class="section fade-in-on-scroll blur-background">
+			<div class="container" id="harry-carrigan">
+				<div class="pull-left" style="margin: 20px 20px 20px 0px;">
+					<img src="/images/harry-carrigan.png" style="width: 100px; height: 100px;" />
+				</div>
+				<h2><div class="btn-group pull-right">
+					<a class="btn btn-primary" href="https://github.com/harryuk"><svg class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg> GitHub</a>
+					<a class="btn btn-default" href="https://harryuk.github.io"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg> Website</a>
+					<a class="btn btn-default" href="mailto:harry@thewalnutspi.ml"><svg class="octicon octicon-mail" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M0 4v8c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V4c0-.55-.45-1-1-1H1c-.55 0-1 .45-1 1zm13 0L7 9 1 4h12zM1 5.5l4 3-4 3v-6zM2 12l3.5-3L7 10.5 8.5 9l3.5 3H2zm11-.5l-4-3 4-3v6z"></path></svg> Email</a>
+				</div>Harry Carrigan <small style="vertical-align: 4px;"><span class="label label-primary">HarryUK</span></small></h2>
+			</div>
+		</div>
+		
+		<div class="section fade-in-on-scroll">
+			<div class="container no-background" id="contact">
+				<h2>Contact us</h2>
+			</div>
+			<div class="blur-background">
+				<div class="container">
+					<br />
+					<p>You can contact me, Samuel Elliott, using my email address <a href="mailto:samuel@thewalnutspi.ml">samuel@thewalnutspi.ml</a>, or Harry Carrigan at <a href="mailto:harry@thewalnutspi.ml">harry@thewalnutspi.ml</a>.</p>
+				</div>
+			</div>
+		</div>
+		
+		<footer class="footer gray-background">
+			<div class="container">
+				<p>Copyright &copy; 2016 Samuel Elliott</p>
+				<p>This website's source code is hosted at <a href="https://github.com/thewalnutspi">https://github.com/thewalnutspi</a>.</p>
+				<p>This website uses code from <a href="https://github.com/twbs/bootstrap">Twitter</a>, <a href="https://github.com/jquery/jquery">jQuery</a> and <a href="https://github.com/primer/octicons">GitHub</a>.<br />
+					Background image <a href="https://en.wikipedia.org/wiki/File:Raspberry_Pi_3_Model_B.png">"Raspberry Pi 3 Model B" from Wikipedia</a>.<br />
+					Raspberry Pi vs Mac by David Holt.</p>
+				<p><i>*</i> This link will only work inside The Walnuts School.</p>
+			</div>
+		</footer>
+	</div>
+	
+	<!-- jQuery + Bootstrap -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	
+	<script src="/js/fadein.js"></script>
+	<script src="/js/background.js"></script>
+	<script src="/js/github.js"></script>
+</body>
+</html>

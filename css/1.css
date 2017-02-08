@@ -1,0 +1,71 @@
+.background {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	
+	background-image: url("../images/pi.png");
+	background-repeat: repeat;
+}
+
+.page {
+	position: relative;
+}
+
+.navbar-fixed-top {
+	position: -webkit-sticky;
+	position: sticky;
+	margin-bottom: 0px;
+}
+
+.jumbotron {
+	box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.075);
+}
+
+.gray-background {
+	background: #eeeeee;
+}
+
+.octicon {
+	vertical-align: middle;
+}
+
+.btn-primary .octicon,
+.label .octicon {
+	fill: currentcolor;
+	vertical-align: -3px;
+}
+
+.section,
+.section-header {
+	margin-bottom: 20px;
+}
+
+.blur-background {
+	-webkit-backdrop-filter: blur(20px) brightness(130%);
+	backdrop-filter: blur(20px) brightness(130%);
+}
+
+.no-background {
+	color: #ffffff;
+	text-shadow: 0px 0px 10px #000000;
+}
+
+* {
+	word-wrap: break-word;
+}
+
+.footer {
+	margin-top: 30px;
+	margin-bottom: 100px;
+}
+
+.footer .container {
+	padding-top: 10px;
+}
+
+html:not(.js) .js,
+html.js .no-js {
+	display: none;
+}
