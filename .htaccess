@@ -3,7 +3,7 @@ DirectoryIndex default.html
 RewriteEngine On
 RewriteBase /
 
+RewriteCond %{HTTPS} !on [OR]
 RewriteCond %{HTTP_HOST} !^thewalnutspi\.ml$
-RewriteCond %{HTTP_HOST} !^thewalnutspi\.server\.samuelthomas\.ml$ [OR]
-RewriteCond %{HTTPS} !on
+RewriteCond %{HTTP_HOST} !^thewalnutspi\.server\.samuelthomas\.ml$
 RewriteRule .* https://thewalnutspi.ml/$1 [L,R=303]
