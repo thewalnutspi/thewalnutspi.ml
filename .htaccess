@@ -3,6 +3,11 @@ DirectoryIndex default.html
 RewriteEngine On
 RewriteBase /
 
+# Kill My Pi rules
+RewriteCond %{HTTP_HOST} ^killmypi\.ml$
+RewriteRule .* https://thewalnutspi.ml/killmypi [L,R=303]
+RewriteRule ^killmypi$ killmypi.html
+
 RewriteCond %{HTTPS} !on [OR]
 RewriteCond %{HTTP_HOST} !^thewalnutspi\.ml$
 RewriteCond %{HTTP_HOST} !^thewalnutspi\.server\.samuelthomas\.ml$
