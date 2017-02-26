@@ -136,6 +136,7 @@
 		<div class="section fade-in-on-scroll blur-background">
 			<div class="container">
 				<h2>Updates</h2>
+				<p><span class="text-success">+ 26/02/1017</span> Setup Piwik</p>
 				<p><span class="text-success">+ 25/02/2017</span> Added <a href="#killmypi">Kill My Pi</a> <a href="/killmypi">website</a><br />
 					<span class="text-success">+ 25/02/2017</span> Added information for <a href="#pi-4">pi-4</a></p>
 				<p><span class="text-success">+ 24/02/2017</span> Added updates section<br />
@@ -369,5 +370,26 @@
 	<script src="/js/fadein.js"></script>
 	<script src="/js/background.js"></script>
 	<script src="/js/github.js"></script>
+	
+	<!-- Piwik -->
+	<script type="text/javascript">
+		var _paq = _paq || [];
+		// tracker methods like "setCustomDimension" should be called before "trackPageView"
+		_paq.push([ "trackPageView" ]);
+		_paq.push([ "enableLinkTracking" ]);
+		(function() {
+			var url = "https://thewalnutspi.ml/piwik/";
+			_paq.push([ "setTrackerUrl", url + "piwik.php" ]);
+			_paq.push([ "setSiteId", "1" ]);
+			var script = document.createElement("script"),
+				firstscript = document.getElementsByTagName("script")[0];
+			script.type = "text/javascript";
+			script.async = true;
+			script.defer = true;
+			script.src = url + "piwik.js";
+			firstscript.parentNode.insertBefore(script, firstscript);
+		})();
+	</script>
+	<noscript><img src="https://thewalnutspi.ml/piwik/piwik.php?idsite=1&amp;rec=1" alt="" style="border: 0px;" /></noscript>
 </body>
 </html>
