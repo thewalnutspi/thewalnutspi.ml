@@ -56,6 +56,11 @@
 	filter: opacity(30%);
 }
 
+.anchor {
+	position: relative;
+	top: -70px;
+}
+
 * {
 	word-wrap: break-word;
 }

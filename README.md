@@ -10,6 +10,8 @@ It isn't hosted on a Raspberry Pi.
 Updates
 ---
 
+- 26/02/2017: Fixed anchors
+
 - 26/02/2017: Setup Piwik
 
 - 25/02/2017: Added Kill My Pi website
