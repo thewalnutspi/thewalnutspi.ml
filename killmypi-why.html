@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kill My Pi - Why?</title>
+	<style>
+		html, body,
+		body > div {
+			width: 100%;
+			height: 100%;
+			overflow: hidden;
+		}
+		html {
+			background-image: url("/images/killmypi.png");
+			background-size: cover;
+			background-attachment: fixed;
+			/* -webkit-backdrop-filter: blur(3px); */
+		}
+		body {
+			animation: animate2 3s ease infinite;
+			transform: perspective(200px) rotateY(40deg) scale(0.5) translate(0px, 5%);
+			filter: drop-shadow(0px 0px 30px #000000);
+		}
+		body > div {
+			background-image: url("/images/thetruth.png");
+			animation: animate 3s ease infinite;
+			height: 100%;
+			width: 100%;
+			background-size: 100px;
+		}
+		@keyframes animate {
+			0% { background-size: 100px; }
+			50% { background-size: 1200px; }
+			100% { background-size: 100px; }
+		}
+		@keyframes animate2 {
+			0% { transform: perspective(200px) rotateY(40deg) scale(0.5) translate(0px, 5%); }
+			50% { transform: perspective(500px) rotateY(-70deg) scale(1) translate(0px, 5%); }
+			100% { transform: perspective(200px) rotateY(40deg) scale(0.5) translate(0px, 5%); }
+		}
+	</style>
+</head>
+<body>
+	<div></div>
+	
+	<!-- Piwik -->
+	<script type="text/javascript">
+		var _paq = _paq || [];
+		// tracker methods like "setCustomDimension" should be called before "trackPageView"
+		_paq.push([ "trackPageView" ]);
+		_paq.push([ "enableLinkTracking" ]);
+		(function() {
+			var url = "https://thewalnutspi.ml/piwik/";
+			_paq.push([ "setTrackerUrl", url + "piwik.php" ]);
+			_paq.push([ "setSiteId", "1" ]);
+			var script = document.createElement("script"),
+				firstscript = document.getElementsByTagName("script")[0];
+			script.type = "text/javascript";
+			script.async = true;
+			script.defer = true;
+			script.src = url + "piwik.js";
+			firstscript.parentNode.insertBefore(script, firstscript);
+		})();
+	</script>
+	<noscript><img src="https://thewalnutspi.ml/piwik/piwik.php?idsite=1&amp;rec=1" alt="" style="border: 0px;" /></noscript>
+</body>
+</html>

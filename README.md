@@ -10,6 +10,7 @@ It isn't hosted on a Raspberry Pi.
 Updates
 ---
 
+- 26/02/2017: Added information on why you should use Kill My Pi
 - 26/02/2017: Added anchor for updates
 - 26/02/2017: Fixed anchors
 
