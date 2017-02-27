@@ -74,6 +74,12 @@
 								<li><a href="https://phpmyadmin-2.thewalnutspi.ml">Pi 2 <i>*</i></a></li>
 								<li><a href="https://phpmyadmin-3.thewalnutspi.ml">Pi 3 <i>*</i></a></li>
 								<li><a href="https://phpmyadmin-4.thewalnutspi.ml">Pi 4 <i>*</i></a></li>
+								<li class="divider" role="separator"></li>
+								<li class="dropdown-header">Status API</li>
+								<li><a href="https://status.samuelthomas.ml/api/pi-1.thewalnutspi.ml:info">Pi 1</a></li>
+								<li><a href="https://status.samuelthomas.ml/api/pi-2.thewalnutspi.ml:info">Pi 2</a></li>
+								<li><a href="https://status.samuelthomas.ml/api/pi-3.thewalnutspi.ml:info">Pi 3</a></li>
+								<li><a href="https://status.samuelthomas.ml/api/pi-4.thewalnutspi.ml:info">Pi 4</a></li>
 							</ul>
 						</li>
 						<li class="dropdown js" id="navbar-dropdown">
@@ -98,6 +104,7 @@
 								<li><a href="#samuel-elliott">Samuel Elliott</a></li>
 								<li><a href="#harry-carrigan">Harry Carrigan</a></li>
 								<li class="divider" role="separator"></li>
+								<li><a href="javascript:$.refreshstatus();">Refresh status</a></li>
 								<li><a href="javascript:$.fadein.reset();">Reset scrolling animation</a></li>
 								<li><a href="javascript:$('html,body').scrollTop(0);">Scroll to the top</a></li>
 								<li><a href="javascript:$('html,body').scrollTop(0);$.fadein.reset();">Scroll to the top and reset scrolling animation</a></li>
@@ -139,7 +146,9 @@
 			<div class="anchor" id="updates"></div>
 			<div class="container">
 				<h2>Updates</h2>
-				<p><span class="text-success">+ 26/02/2017</span> Added menu on Kill My Pi website<br />
+				<p><span class="text-success">+ 27/02/2017</span> Added status.samuelthomas.ml API<br />
+					<span class="text-success">+ 26/02/2017</span> Added pi-1, pi-2, pi-3 and pi-4 to status.samuelthomas.ml<br />
+					<span class="text-success">+ 26/02/2017</span> Added menu on Kill My Pi website<br />
 					<span class="text-success">+ 26/02/2017</span> Added information on why you should use Kill My Pi<br />
 					<span class="text-success">+ 26/02/2017</span> Added anchor for updates<br />
 					<span class="text-success">+ 26/02/2017</span> Fixed anchors</p>
@@ -170,7 +179,10 @@
 					<a class="btn btn-default" href="mailto:pi-1@thewalnutspi.ml"><svg class="octicon octicon-mail" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M0 4v8c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V4c0-.55-.45-1-1-1H1c-.55 0-1 .45-1 1zm13 0L7 9 1 4h12zM1 5.5l4 3-4 3v-6zM2 12l3.5-3L7 10.5 8.5 9l3.5 3H2zm11-.5l-4-3 4-3v6z"></path></svg> Support</a>
 					<a class="btn btn-default" href="smb://pi@pi-1.thewalnutspi.ml"><svg class="octicon octicon-file-directory" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M13 4H7V3c0-.66-.31-1-1-1H1c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V5c0-.55-.45-1-1-1zM6 4H1V3h5v1z"></path></svg> SMB <i>*</i></a>
 					<a class="btn btn-default" href="https://phpmyadmin-1.thewalnutspi.ml"><svg class="octicon octicon-database" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M6 15c-3.31 0-6-.9-6-2v-2c0-.17.09-.34.21-.5.67.86 3 1.5 5.79 1.5s5.12-.64 5.79-1.5c.13.16.21.33.21.5v2c0 1.1-2.69 2-6 2zm0-4c-3.31 0-6-.9-6-2V7c0-.11.04-.21.09-.31.03-.06.07-.13.12-.19C.88 7.36 3.21 8 6 8s5.12-.64 5.79-1.5c.05.06.09.13.12.19.05.1.09.21.09.31v2c0 1.1-2.69 2-6 2zm0-4c-3.31 0-6-.9-6-2V3c0-1.1 2.69-2 6-2s6 .9 6 2v2c0 1.1-2.69 2-6 2zm0-5c-2.21 0-4 .45-4 1s1.79 1 4 1 4-.45 4-1-1.79-1-4-1z"></path></svg> phpMyAdmin <i>*</i></a>
-				</div>Pi 1 <small style="vertical-align: 4px;"><span class="label label-default text-uppercase">WINS pi-1</span> <span class="label label-default text-uppercase">Bonjour <span class="text-lowercase">pi-1.local</span></span></small></h2>
+					<a class="btn btn-default" href="https://status.samuelthomas.ml/api/pi-1.thewalnutspi.ml:info"><svg class="octicon octicon-server" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M11 6H1c-.55 0-1 .45-1 1v2c0 .55.45 1 1 1h10c.55 0 1-.45 1-1V7c0-.55-.45-1-1-1zM2 9H1V7h1v2zm2 0H3V7h1v2zm2 0H5V7h1v2zm2 0H7V7h1v2zm3-8H1c-.55 0-1 .45-1 1v2c0 .55.45 1 1 1h10c.55 0 1-.45 1-1V2c0-.55-.45-1-1-1zM2 4H1V2h1v2zm2 0H3V2h1v2zm2 0H5V2h1v2zm2 0H7V2h1v2zm3-1h-1V2h1v1zm0 8H1c-.55 0-1 .45-1 1v2c0 .55.45 1 1 1h10c.55 0 1-.45 1-1v-2c0-.55-.45-1-1-1zm-9 3H1v-2h1v2zm2 0H3v-2h1v2zm2 0H5v-2h1v2zm2 0H7v-2h1v2z"></path></svg> Status API</a>
+				</div>Pi 1 <small style="vertical-align: 4px;"><span class="label label-default text-uppercase">WINS pi-1</span> <span class="label label-default text-uppercase">Bonjour <span class="text-lowercase">pi-1.local</span></span> <span class="site-status" data-site="pi-1.thewalnutspi.ml">
+					<span class="label label-default"><svg class="octicon octicon-ellipsis" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path d="M11 5H1c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1h10c.55 0 1-.45 1-1V6c0-.55-.45-1-1-1zM4 9H2V7h2v2zm3 0H5V7h2v2zm3 0H8V7h2v2z"></path></svg></span>
+				</span></small></h2>
 			</div>
 		</div>
 		
@@ -182,7 +194,10 @@
 					<a class="btn btn-default" href="mailto:pi-2@thewalnutspi.ml"><svg class="octicon octicon-mail" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M0 4v8c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V4c0-.55-.45-1-1-1H1c-.55 0-1 .45-1 1zm13 0L7 9 1 4h12zM1 5.5l4 3-4 3v-6zM2 12l3.5-3L7 10.5 8.5 9l3.5 3H2zm11-.5l-4-3 4-3v6z"></path></svg> Support</a>
 					<a class="btn btn-default" href="smb://pi@pi-2.thewalnutspi.ml"><svg class="octicon octicon-file-directory" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M13 4H7V3c0-.66-.31-1-1-1H1c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V5c0-.55-.45-1-1-1zM6 4H1V3h5v1z"></path></svg> SMB <i>*</i></a>
 					<a class="btn btn-default" href="https://phpmyadmin-2.thewalnutspi.ml"><svg class="octicon octicon-database" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M6 15c-3.31 0-6-.9-6-2v-2c0-.17.09-.34.21-.5.67.86 3 1.5 5.79 1.5s5.12-.64 5.79-1.5c.13.16.21.33.21.5v2c0 1.1-2.69 2-6 2zm0-4c-3.31 0-6-.9-6-2V7c0-.11.04-.21.09-.31.03-.06.07-.13.12-.19C.88 7.36 3.21 8 6 8s5.12-.64 5.79-1.5c.05.06.09.13.12.19.05.1.09.21.09.31v2c0 1.1-2.69 2-6 2zm0-4c-3.31 0-6-.9-6-2V3c0-1.1 2.69-2 6-2s6 .9 6 2v2c0 1.1-2.69 2-6 2zm0-5c-2.21 0-4 .45-4 1s1.79 1 4 1 4-.45 4-1-1.79-1-4-1z"></path></svg> phpMyAdmin <i>*</i></a>
-				</div>Pi 2 <small style="vertical-align: 4px;"><span class="label label-default text-uppercase">WINS harry</span> <span class="label label-default text-uppercase">Bonjour <span class="text-lowercase">harry.local</span></span></small></h2>
+					<a class="btn btn-default" href="https://status.samuelthomas.ml/api/pi-2.thewalnutspi.ml:info"><svg class="octicon octicon-server" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M11 6H1c-.55 0-1 .45-1 1v2c0 .55.45 1 1 1h10c.55 0 1-.45 1-1V7c0-.55-.45-1-1-1zM2 9H1V7h1v2zm2 0H3V7h1v2zm2 0H5V7h1v2zm2 0H7V7h1v2zm3-8H1c-.55 0-1 .45-1 1v2c0 .55.45 1 1 1h10c.55 0 1-.45 1-1V2c0-.55-.45-1-1-1zM2 4H1V2h1v2zm2 0H3V2h1v2zm2 0H5V2h1v2zm2 0H7V2h1v2zm3-1h-1V2h1v1zm0 8H1c-.55 0-1 .45-1 1v2c0 .55.45 1 1 1h10c.55 0 1-.45 1-1v-2c0-.55-.45-1-1-1zm-9 3H1v-2h1v2zm2 0H3v-2h1v2zm2 0H5v-2h1v2zm2 0H7v-2h1v2z"></path></svg> Status API</a>
+				</div>Pi 2 <small style="vertical-align: 4px;"><span class="label label-default text-uppercase">WINS harry</span> <span class="label label-default text-uppercase">Bonjour <span class="text-lowercase">harry.local</span></span> <span class="site-status" data-site="pi-2.thewalnutspi.ml">
+					<span class="label label-default"><svg class="octicon octicon-ellipsis" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path d="M11 5H1c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1h10c.55 0 1-.45 1-1V6c0-.55-.45-1-1-1zM4 9H2V7h2v2zm3 0H5V7h2v2zm3 0H8V7h2v2z"></path></svg></span>
+				</span></small></h2>
 				<p>Data destroyed.</p>
 			</div>
 		</div>
@@ -195,7 +210,10 @@
 					<a class="btn btn-default" href="mailto:pi-3@thewalnutspi.ml"><svg class="octicon octicon-mail" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M0 4v8c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V4c0-.55-.45-1-1-1H1c-.55 0-1 .45-1 1zm13 0L7 9 1 4h12zM1 5.5l4 3-4 3v-6zM2 12l3.5-3L7 10.5 8.5 9l3.5 3H2zm11-.5l-4-3 4-3v6z"></path></svg> Support</a>
 					<a class="btn btn-default" href="smb://pi@pi-3.thewalnutspi.ml"><svg class="octicon octicon-file-directory" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M13 4H7V3c0-.66-.31-1-1-1H1c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V5c0-.55-.45-1-1-1zM6 4H1V3h5v1z"></path></svg> SMB <i>*</i></a>
 					<a class="btn btn-default" href="https://phpmyadmin-3.thewalnutspi.ml"><svg class="octicon octicon-database" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M6 15c-3.31 0-6-.9-6-2v-2c0-.17.09-.34.21-.5.67.86 3 1.5 5.79 1.5s5.12-.64 5.79-1.5c.13.16.21.33.21.5v2c0 1.1-2.69 2-6 2zm0-4c-3.31 0-6-.9-6-2V7c0-.11.04-.21.09-.31.03-.06.07-.13.12-.19C.88 7.36 3.21 8 6 8s5.12-.64 5.79-1.5c.05.06.09.13.12.19.05.1.09.21.09.31v2c0 1.1-2.69 2-6 2zm0-4c-3.31 0-6-.9-6-2V3c0-1.1 2.69-2 6-2s6 .9 6 2v2c0 1.1-2.69 2-6 2zm0-5c-2.21 0-4 .45-4 1s1.79 1 4 1 4-.45 4-1-1.79-1-4-1z"></path></svg> phpMyAdmin <i>*</i></a>
-				</div>Pi 3 <small style="vertical-align: 4px;"><span class="label label-default text-uppercase">WINS pi-3</span> <span class="label label-default text-uppercase">Bonjour <span class="text-lowercase">pi-3.local</span></span></small></h2>
+					<a class="btn btn-default" href="https://status.samuelthomas.ml/api/pi-3.thewalnutspi.ml:info"><svg class="octicon octicon-server" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M11 6H1c-.55 0-1 .45-1 1v2c0 .55.45 1 1 1h10c.55 0 1-.45 1-1V7c0-.55-.45-1-1-1zM2 9H1V7h1v2zm2 0H3V7h1v2zm2 0H5V7h1v2zm2 0H7V7h1v2zm3-8H1c-.55 0-1 .45-1 1v2c0 .55.45 1 1 1h10c.55 0 1-.45 1-1V2c0-.55-.45-1-1-1zM2 4H1V2h1v2zm2 0H3V2h1v2zm2 0H5V2h1v2zm2 0H7V2h1v2zm3-1h-1V2h1v1zm0 8H1c-.55 0-1 .45-1 1v2c0 .55.45 1 1 1h10c.55 0 1-.45 1-1v-2c0-.55-.45-1-1-1zm-9 3H1v-2h1v2zm2 0H3v-2h1v2zm2 0H5v-2h1v2zm2 0H7v-2h1v2z"></path></svg> Status API</a>
+				</div>Pi 3 <small style="vertical-align: 4px;"><span class="label label-default text-uppercase">WINS pi-3</span> <span class="label label-default text-uppercase">Bonjour <span class="text-lowercase">pi-3.local</span></span> <span class="site-status" data-site="pi-3.thewalnutspi.ml">
+					<span class="label label-default"><svg class="octicon octicon-ellipsis" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path d="M11 5H1c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1h10c.55 0 1-.45 1-1V6c0-.55-.45-1-1-1zM4 9H2V7h2v2zm3 0H5V7h2v2zm3 0H8V7h2v2z"></path></svg></span>
+				</span></small></h2>
 				<p>Currently being used to host <a href="#foodheaven">Food Heaven [website]</a>.</p>
 			</div>
 		</div>
@@ -208,7 +226,10 @@
 					<a class="btn btn-default" href="mailto:pi-4@thewalnutspi.ml"><svg class="octicon octicon-mail" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M0 4v8c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V4c0-.55-.45-1-1-1H1c-.55 0-1 .45-1 1zm13 0L7 9 1 4h12zM1 5.5l4 3-4 3v-6zM2 12l3.5-3L7 10.5 8.5 9l3.5 3H2zm11-.5l-4-3 4-3v6z"></path></svg> Support</a>
 					<a class="btn btn-default" href="smb://pi@pi-4.thewalnutspi.ml"><svg class="octicon octicon-file-directory" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M13 4H7V3c0-.66-.31-1-1-1H1c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V5c0-.55-.45-1-1-1zM6 4H1V3h5v1z"></path></svg> SMB</a>
 					<button class="btn btn-default" disabled="disabled"><svg class="octicon octicon-database" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M6 15c-3.31 0-6-.9-6-2v-2c0-.17.09-.34.21-.5.67.86 3 1.5 5.79 1.5s5.12-.64 5.79-1.5c.13.16.21.33.21.5v2c0 1.1-2.69 2-6 2zm0-4c-3.31 0-6-.9-6-2V7c0-.11.04-.21.09-.31.03-.06.07-.13.12-.19C.88 7.36 3.21 8 6 8s5.12-.64 5.79-1.5c.05.06.09.13.12.19.05.1.09.21.09.31v2c0 1.1-2.69 2-6 2zm0-4c-3.31 0-6-.9-6-2V3c0-1.1 2.69-2 6-2s6 .9 6 2v2c0 1.1-2.69 2-6 2zm0-5c-2.21 0-4 .45-4 1s1.79 1 4 1 4-.45 4-1-1.79-1-4-1z"></path></svg> phpMyAdmin</button>
-				</div>Pi 4 <small style="vertical-align: 4px;"><span class="label label-default text-uppercase">WINS pi-4</span> <span class="label label-default text-uppercase">Bonjour <span class="text-lowercase">pi-4.local</span></span></small></h2>
+					<a class="btn btn-default" href="https://status.samuelthomas.ml/api/pi-4.thewalnutspi.ml:info"><svg class="octicon octicon-server" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M11 6H1c-.55 0-1 .45-1 1v2c0 .55.45 1 1 1h10c.55 0 1-.45 1-1V7c0-.55-.45-1-1-1zM2 9H1V7h1v2zm2 0H3V7h1v2zm2 0H5V7h1v2zm2 0H7V7h1v2zm3-8H1c-.55 0-1 .45-1 1v2c0 .55.45 1 1 1h10c.55 0 1-.45 1-1V2c0-.55-.45-1-1-1zM2 4H1V2h1v2zm2 0H3V2h1v2zm2 0H5V2h1v2zm2 0H7V2h1v2zm3-1h-1V2h1v1zm0 8H1c-.55 0-1 .45-1 1v2c0 .55.45 1 1 1h10c.55 0 1-.45 1-1v-2c0-.55-.45-1-1-1zm-9 3H1v-2h1v2zm2 0H3v-2h1v2zm2 0H5v-2h1v2zm2 0H7v-2h1v2z"></path></svg> Status API</a>
+				</div>Pi 4 <small style="vertical-align: 4px;"><span class="label label-default text-uppercase">WINS pi-4</span> <span class="label label-default text-uppercase">Bonjour <span class="text-lowercase">pi-4.local</span></span> <span class="site-status" data-site="pi-4.thewalnutspi.ml">
+					<span class="label label-default"><svg class="octicon octicon-ellipsis" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path d="M11 5H1c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1h10c.55 0 1-.45 1-1V6c0-.55-.45-1-1-1zM4 9H2V7h2v2zm3 0H5V7h2v2zm3 0H8V7h2v2z"></path></svg></span>
+				</span></small></h2>
 				<p>To be setup soon.</p>
 			</div>
 		</div>
@@ -391,6 +412,7 @@
 	<script src="/js/fadein.js"></script>
 	<script src="/js/background.js"></script>
 	<script src="/js/github.js"></script>
+	<script src="https://status.samuelthomas.ml/api.js"></script>
 	<script src="/js/anchor.js"></script>
 	
 	<!-- Piwik -->
