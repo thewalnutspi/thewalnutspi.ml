@@ -10,6 +10,8 @@ It isn't hosted on a Raspberry Pi.
 Updates
 ---
 
+- 28/02/2017: Updated picture of Harry Carrigan
+
 - 27/02/2017: Added status.samuelthomas.ml API
 - 26/02/2017: Added pi-1, pi-2, pi-3 and pi-4 to status.samuelthomas.ml
 - 26/02/2017: Added menu on Kill My Pi website
