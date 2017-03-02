@@ -19,6 +19,10 @@
 	margin-bottom: 0px;
 }
 
+.dropdown-menu .label {
+	vertical-align: 1px;
+}
+
 .jumbotron {
 	box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.075);
 }
