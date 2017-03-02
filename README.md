@@ -10,6 +10,7 @@ It isn't hosted on a Raspberry Pi.
 Updates
 ---
 
+- 02/03/2017: Updated faded styles
 - 02/03/2017: Updated navigation
 
 - 01/03/2017: Added information for DNS Update Client

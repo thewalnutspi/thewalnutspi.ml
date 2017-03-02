@@ -53,7 +53,7 @@
 }
 
 .faded {
-	filter: opacity(30%);
+	filter: opacity(30%) brightness(20%);
 }
 
 .anchor {
