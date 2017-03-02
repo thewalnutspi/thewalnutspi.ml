@@ -10,6 +10,9 @@ It isn't hosted on a Raspberry Pi.
 Updates
 ---
 
+- 01/03/2017: Updated status of pi-2 and pi-4
+- 01/03/2017: Setup pi-2
+
 - 28/02/2017: Updated picture of Harry Carrigan
 
 - 27/02/2017: Added status.samuelthomas.ml API
