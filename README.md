@@ -10,6 +10,7 @@ It isn't hosted on a Raspberry Pi.
 Updates
 ---
 
+- 02/03/2017: Increased padding of sections
 - 02/03/2017: Updated status of pi-2 and pi-4
 - 02/03/2017: Fixed positioning of labels in dropdown menus
 - 02/03/2017: Updated faded styles

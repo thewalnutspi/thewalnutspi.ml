@@ -46,6 +46,25 @@
 	margin-bottom: 20px;
 }
 
+.section .container {
+	padding-bottom: 10px;
+}
+
+.section h2 .btn-group {
+	margin-bottom: 10px;
+}
+
+@media screen and (min-width: 768px) {
+	.section .container {
+		padding-top: 10px;
+		padding-bottom: 20px;
+	}
+
+	.section h2 .btn-group {
+		margin-left: 10px;
+	}
+}
+
 .blur-background {
 	-webkit-backdrop-filter: blur(20px) brightness(130%);
 	backdrop-filter: blur(20px) brightness(130%);
