@@ -12,4 +12,4 @@ RewriteRule ^killmypi(\.html)?\/why$ killmypi-why.html
 RewriteCond %{HTTPS} !on [OR]
 RewriteCond %{HTTP_HOST} !^thewalnutspi\.ml$
 RewriteCond %{HTTP_HOST} !^thewalnutspi\.server\.samuelthomas\.ml$
-RewriteRule .* https://thewalnutspi.ml/$1 [L,R=303]
+RewriteRule ^(.*)$ https://thewalnutspi.ml/$1 [L,R=303]
