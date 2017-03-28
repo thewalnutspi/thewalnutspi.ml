@@ -155,7 +155,8 @@
 			<div class="anchor" id="updates"></div>
 			<div class="container">
 				<h2>Updates</h2>
-				<p><span class="text-success">+ 02/03/2017</span> Added anchors on <a href="#pis">pis</a>, <a href="#projects">projects</a> and <a href="#people">people</a> section headers<br />
+				<p><span class="text-success">+ 03/03/2017</span> Added contact form<br />
+					<span class="text-success">+ 02/03/2017</span> Added anchors on <a href="#pis">pis</a>, <a href="#projects">projects</a> and <a href="#people">people</a> section headers<br />
 					<span class="text-success">+ 02/03/2017</span> Increased padding of sections<br />
 					<span class="text-success">+ 02/03/2017</span> Updated status of <a href="#pi-2">pi-2</a> and <a href="#pi-4">pi-4</a><br />
 					<span class="text-success">+ 02/03/2017</span> Updated navigation</p>
@@ -423,6 +424,31 @@
 				<div class="container">
 					<br />
 					<p>You can contact us at <a href="mailto:support@thewalnutspi.ml">support@thewalnutspi.ml</a>, and you can find email addresses for pis, projects and people above.</p>
+					<form class="form-horizontal" action="https://server-secure.samuelthomas.ml/thewalnutspi/save-contact" method="post">
+						<div class="form-group">
+							<label class="col-sm-2 control-label" for="contact-name">Name</label>
+							<div class="col-sm-10">
+								<input class="form-control" type="text" name="name" id="contact-name">
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-sm-2 control-label" for="contact-email">Email address</label>
+							<div class="col-sm-10">
+								<input class="form-control" type="email" name="email" id="contact-email">
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-sm-2 control-label" for="contact-message">Message</label>
+							<div class="col-sm-10">
+								<textarea class="form-control" name="message" id="contact-message" style="min-height: 100px; max-height: 400px; resize: vertical;"></textarea>
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-sm-offset-2 col-sm-10">
+								<button class="btn btn-primary" type="submit">Submit</button>
+							</div>
+						</div>
+					</form>
 				</div>
 			</div>
 		</div>

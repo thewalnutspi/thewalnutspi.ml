@@ -10,6 +10,7 @@ It isn't hosted on a Raspberry Pi.
 Updates
 ---
 
+- 03/03/2017: Added contact form
 - 02/03/2017: Added anchors on pis, projects and people section headers
 - 02/03/2017: Increased padding of sections
 - 02/03/2017: Updated status of pi-2 and pi-4
