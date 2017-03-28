@@ -18,6 +18,8 @@ Updates
 - 02/03/2017: Updated faded styles
 - 02/03/2017: Updated navigation
 
+- 02/03/2017: Setup pi.harry.ml and stupidpi.duckdns.org
+
 - 01/03/2017: Added information for DNS Update Client
 - 01/03/2017: Updated status of pi-2 and pi-4
 - 01/03/2017: Setup pi-2
