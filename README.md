@@ -10,6 +10,18 @@ It isn't hosted on a Raspberry Pi.
 Updates
 ---
 
+- 13/10/2017: Set up certbot on pi-1 and enabled HTTPS on Apache using the Let's Encrypt certificate
+- 12/10/2017: Installed certbot on pi-1
+
+- 10?/10/2017: Set up an OpenVPN tunnel on pi-2 with the static IP address `2001:470:6d29:44::1006`</code><br />`
+- 10?/10/2017: Set up pi-2
+
+- 05/10/2017: Set up an OpenVPN tunnel on pi-1> and pi-3 - they have the static IP addresses `2001:470:6d29:44::1005` and `2001:470:6d29:44::1004`
+
+- 04/10/2017: Tried installing FreeBSD on pi-1 - switched back to the Raspbian SD card as FreeBSD doesn't seem to support the Wi-Fi adapters we're using (without installing any drivers at least)
+- 13/06/2017: Setup Raspbian Pixel pi-2
+- 13/06/2017</span> Destroyed the data on pi-2
+
 - 03/03/2017: Added contact form
 - 02/03/2017: Added anchors on pis, projects and people section headers
 - 02/03/2017: Increased padding of sections
