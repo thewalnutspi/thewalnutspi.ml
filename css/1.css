@@ -98,6 +98,13 @@
 	filter: opacity(30%) brightness(20%);
 }
 
+.section-box {
+	margin-top: 20px;
+	border-top: rgba(238, 238, 238, 0.5) 1px solid;
+	padding-top: 15px;
+	color: #444444;
+}
+
 .anchor {
 	position: relative;
 	top: -70px;
